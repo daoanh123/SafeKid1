@@ -22,11 +22,14 @@ namespace SafeKid1
         public MainWindow()
         {
             InitializeComponent();
+           
+
 
         }
+        
        private void ButtonLogin(object sender, RoutedEventArgs e)
         {
-            var pass = Password.Text;
+            var pass = Password.Password.ToString();
 
             string p4ss;
 

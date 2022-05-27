@@ -29,5 +29,11 @@ namespace SafeKid1
         {
             this.Close();
         }
+        private void button_setting(object sender, RoutedEventArgs e)
+        {
+            listView subWindow1 = new listView() ;
+            subWindow1.Show();
+            
+        }
     }
 }

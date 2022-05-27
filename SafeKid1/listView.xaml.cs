@@ -21,5 +21,26 @@ namespace SafeKid1
         {
             InitializeComponent();
         }
+        private void ClickClose(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        private void txtClear()
+        {
+            DomainTxt.Clear();
+                }
+        private void AddList(object sender, RoutedEventArgs e)
+        {
+                
+            ListDomain.Items.Add(DomainTxt.Text);
+            txtClear();
+
+        }
+        private void remove(object sender, RoutedEventArgs e)
+        {
+            if (ListDomain.SelectedItem != null)
+                ListDomain.Items.Remove(ListDomain.SelectedItem);
+            txtClear();
+        }
     }
 }

@@ -70,7 +70,7 @@
                     </Style>
                 </DataGrid.Resources>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Phần mềm web" FontWeight="Light" Width="150" Foreground="White" />
+                    <DataGridTextColumn Header="Phần mềm" FontWeight="Light" Width="150" Foreground="White" />
                     <DataGridTextColumn Header="Thời gian" FontWeight="Light" Width="150" Foreground="White" />
                     <DataGridTextColumn Header="Bắt đầu" FontWeight="Light" Width="150" Foreground="White"/>
                     <DataGridTextColumn Header="Kết thúc" FontWeight="Light" Width="150" Foreground="White"/>
@@ -278,6 +278,9 @@
 
 
                     </StackPanel>
+                    <Button Width="35" Height="35" Margin="102,101,40,10" Click="button_setting">
+                        <iconPacks:PackIconMaterial Kind="SettingsHelper"  Foreground="White"/>
+                    </Button>
                 </Grid>
             </Grid>
 
