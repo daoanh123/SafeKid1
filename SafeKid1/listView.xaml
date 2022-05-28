@@ -27,7 +27,7 @@
                                 Foreground="White"
                                 Margin="10,10,0,0">
                                
-                Danh Sach Domain bị chặn
+                Danh Sách Domain bị chặn
             </TextBlock>
             <Button HorizontalAlignment="Left" Width="30px" Height="30px" VerticalAlignment="Top"  FontWeight="Normal" Click="ClickClose" Margin="340,8,0,0" >
                 <iconPacks:PackIconMaterial Kind="Close"  Foreground="White"/>

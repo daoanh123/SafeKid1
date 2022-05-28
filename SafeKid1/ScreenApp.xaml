@@ -55,7 +55,7 @@
                 <ColumnDefinition Width="19*"/>
                 <ColumnDefinition Width="781*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid x:Name="Dataweb" Grid.Column="1" Margin="5,0,24,0">
+            <DataGrid x:Name="Dataweb" Grid.Column="1" Margin="48,0,93,0">
                 <DataGrid.Resources>
                     <Style TargetType="{x:Type DataGridColumnHeader}">
                         <Setter Property="Background" Value="Turquoise"></Setter>
@@ -71,10 +71,9 @@
                 </DataGrid.Resources>
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Phần mềm" FontWeight="Light" Width="150" Foreground="White" />
-                    <DataGridTextColumn Header="Thời gian" FontWeight="Light" Width="150" Foreground="White" />
-                    <DataGridTextColumn Header="Bắt đầu" FontWeight="Light" Width="150" Foreground="White"/>
-                    <DataGridTextColumn Header="Kết thúc" FontWeight="Light" Width="150" Foreground="White"/>
-                    <DataGridTextColumn Header="Sử dụng" FontWeight="Light" Width="150" Foreground="White"/>
+                    <DataGridTextColumn Header="web đã sử dung" FontWeight="Light" Width="150" Foreground="White" />
+                    <DataGridTextColumn Header="phần mềm đã sử dụng" FontWeight="Light" Width="150" Foreground="White"/>
+                    <DataGridTextColumn Header="ứng dụng đã cài đặt" FontWeight="Light" Width="150" Foreground="White"/>
                 </DataGrid.Columns>
             </DataGrid>
 
