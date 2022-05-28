@@ -43,6 +43,7 @@
                                 FontWeight="Light"
                                 FontFamily="helvetica"
                                 FontSize="22"
+                                
                                 Foreground="White"
                                 Text="Nhật ký sử dụng phần mềm/Truy cập webSite" Grid.ColumnSpan="2" />
             <Button HorizontalAlignment="Left" Width="30px" Height="30px" VerticalAlignment="Top" Margin="391,-5,0,0" FontWeight="Normal" Grid.Column="1" Click="ClickClose" >
@@ -55,7 +56,7 @@
                 <ColumnDefinition Width="19*"/>
                 <ColumnDefinition Width="781*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid x:Name="Dataweb" Grid.Column="1" Margin="48,0,93,0">
+            <DataGrid x:Name="Dataweb" Grid.Column="1" Margin="10,0,413,0">
                 <DataGrid.Resources>
                     <Style TargetType="{x:Type DataGridColumnHeader}">
                         <Setter Property="Background" Value="Turquoise"></Setter>
@@ -70,10 +71,27 @@
                     </Style>
                 </DataGrid.Resources>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Phần mềm" FontWeight="Light" Width="150" Foreground="White" />
-                    <DataGridTextColumn Header="web đã sử dung" FontWeight="Light" Width="150" Foreground="White" />
-                    <DataGridTextColumn Header="phần mềm đã sử dụng" FontWeight="Light" Width="150" Foreground="White"/>
-                    <DataGridTextColumn Header="ứng dụng đã cài đặt" FontWeight="Light" Width="150" Foreground="White"/>
+                    <DataGridTextColumn Header="Phần mềm/Web" FontWeight="Light" Width="400" Foreground="White" />
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid x:Name="Data" Grid.Column="1" Margin="379,0,31,0">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="Turquoise"></Setter>
+                        <Setter Property="FontWeight" Value="DemiBold"></Setter>
+                        <Setter Property="BorderThickness" Value="0,0,1,2"></Setter>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="FontStretch" Value="UltraExpanded"/>
+                        <Setter Property="Padding" Value="10,0,0,0"/>
+                        <Setter Property="BorderBrush" Value="Blue"/>
+
+
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Ứng dụng cài đặt gần đây" FontWeight="Light" Width="400" Foreground="White" />
+
                 </DataGrid.Columns>
             </DataGrid>
 
