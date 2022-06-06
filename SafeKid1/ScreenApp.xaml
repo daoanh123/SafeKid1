@@ -56,7 +56,7 @@
                 <ColumnDefinition Width="19*"/>
                 <ColumnDefinition Width="781*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid x:Name="Dataweb" Grid.Column="1" Margin="10,0,413,0">
+            <DataGrid x:Name="Dataweb" Margin="73,0,105,0" Grid.Column="1">
                 <DataGrid.Resources>
                     <Style TargetType="{x:Type DataGridColumnHeader}">
                         <Setter Property="Background" Value="Turquoise"></Setter>
@@ -66,16 +66,19 @@
                         <Setter Property="FontStretch" Value="UltraExpanded"/>
                         <Setter Property="Padding" Value="10,0,0,0"/>
                         <Setter Property="BorderBrush" Value="Blue"/>
-                        
+
 
                     </Style>
                 </DataGrid.Resources>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Phần mềm/Web" FontWeight="Light" Width="400" Foreground="White" />
-                    
+                    <DataGridTextColumn Header="Phần mềm/Web" FontWeight="Light" Width="200" Foreground="White" />
+
+                    <DataGridTextColumn Header="Thời gian bắt đầu" FontWeight="Light" Width="200" Foreground="White" />
+                    <DataGridTextColumn Header="Thời gian sử dung" FontWeight="Light" Width="200" Foreground="White" />
+
                 </DataGrid.Columns>
             </DataGrid>
-            <DataGrid x:Name="Data" Grid.Column="1" Margin="379,0,31,0">
+           <!-- <DataGrid x:Name="Data" Grid.Column="1" Margin="366,0,10,0">
                 <DataGrid.Resources>
                     <Style TargetType="{x:Type DataGridColumnHeader}">
                         <Setter Property="Background" Value="Turquoise"></Setter>
@@ -89,11 +92,12 @@
 
                     </Style>
                 </DataGrid.Resources>
+            
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Ứng dụng cài đặt gần đây" FontWeight="Light" Width="400" Foreground="White" />
 
                 </DataGrid.Columns>
-            </DataGrid>
+            </DataGrid>-->
 
 
 
@@ -297,6 +301,9 @@
                     </StackPanel>
                     <Button Width="35" Height="35" Margin="102,101,40,10" Click="button_setting">
                         <iconPacks:PackIconMaterial Kind="SettingsHelper"  Foreground="White"/>
+                    </Button>
+                    <Button Width="35" Height="35" Margin="59,108,94,13" Click="button_installed">
+                        <iconPacks:PackIconMaterial Kind="More"  Foreground="White"/>
                     </Button>
                 </Grid>
             </Grid>

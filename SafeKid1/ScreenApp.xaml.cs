@@ -35,5 +35,11 @@ namespace SafeKid1
             subWindow1.Show();
             
         }
+        private void button_installed(object sender, RoutedEventArgs e)
+        {
+            installedApps subWindow1 = new installedApps();
+            subWindow1.Show();
+
+        }
     }
 }
