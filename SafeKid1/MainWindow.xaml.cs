@@ -19,11 +19,11 @@ namespace SafeKid1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly viewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
-           
-
+            
 
         }
         
@@ -66,7 +66,9 @@ namespace SafeKid1
         private void ClickClose(object sender, RoutedEventArgs e)
         {
             this.Close();
+           
         }
+       
 
     }
       

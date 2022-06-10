@@ -17,9 +17,25 @@ namespace SafeKid1
     /// </summary>
     public partial class ScreenApp : Window
     {
+        private readonly viewModel viewModel;
         public ScreenApp()
         {
             InitializeComponent();
+            this.viewModel = new viewModel
+            {
+                DataGridItems = new List<appList>()
+                {
+                    new appList
+                    {
+                        nameApp="Chrome",
+                        startTime="12PM",
+                        endTime="14PM"
+                    }
+
+                }
+
+            };
+            this.DataContext = this.viewModel;
         }
         private void Toggle_btn1_Checked(object sender, RoutedEventArgs e)
         {
@@ -40,6 +56,16 @@ namespace SafeKid1
             installedApps subWindow1 = new installedApps();
             subWindow1.Show();
 
+        }
+
+        private void Dataweb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        
+        public void hienthi()
+        {
+            
         }
     }
 }
